@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <title>Twitch Community Moderator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alexmoderat</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      background: #121212;
+      color: #f0f0f0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #9146ff; /* Twitch-Lila */
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a.button {
+      background: #9146ff;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 15px rgba(145, 70, 255, 0.4);
+      user-select: none;
+    }
+
+    a.button:hover {
+      background: #772ee8;
+      box-shadow: 0 6px 20px rgba(119, 46, 232, 0.7);
+    }
+
+    img.avatar {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px #9146ffaa;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Twitch Community Moderator</h1>
-    <p>Discord: <a href="https://discord.gg/BufGWxEXrf" target="_blank">discord.gg/BufGWxEXrf</a></p>
-    <p>Twitch: <a href="https://www.twitch.tv/alexmoderat" target="_blank">alexmoderat</a></p>
-    <img src="https://cdn.7tv.app/emote/01F5PEDKJ00004R630K8ESMRAX/4x.webp" alt="7tv Emote" />
+  <img class="avatar" src="https://cdn.7tv.app/emote/01F5PEDKJ00004R630K8ESMRAX/3x" alt="Profilbild" />
+  <h1>Alexmoderat</h1>
+  <p>Twitch Community Moderator & Content Creator</p>
+  <div class="buttons">
+    <a href="https://twitch.tv/alexmoderat" target="_blank" class="button">Twitch</a>
+    <a href="https://discord.gg/BufGWxEXrf" target="_blank" class="button">Discord</a>
+    <a href="https://github.com/alexmoderat" target="_blank" class="button">GitHub</a>
+  </div>
 </body>
 </html>
